@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+:root {
+    --cor-princ: #1190CB;
+    --cor-02: #2E4FFF;
+    --cor-03: #313966;
+    --cor-04: #F7F4F4;
+
+    --font-princ: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor-04);
+}
+
+.botao {
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    border: 1px solid var(--cor-02);
+    border-radius: 5px;
+    color: var(--cor-02);
+}
+.botao:hover {
+    background-color: var(--cor-02);
+    color: var(--cor-04);
+    transition: 0.4s;
+}

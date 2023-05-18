@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    
+    <script>
+        const numeros = [];
+
+        for(i = 0; i < 3; i++){
+            numeros[i] = parseInt(prompt('Digite um número'));
+        };
+
+        function imprimirMedia() {
+            const soma = numeros[0] + numeros[1] + numeros[2];
+            const media = parseInt(soma) / 3;
+
+            const resultado = document.querySelector('#result');
+            resultado.innerHTML = `A média será de: <strong>${parseInt(media)}</strong>`;
+        };
+        
+        imprimirMedia();
+    </script>
+</body>
+</html>

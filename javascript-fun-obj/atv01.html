@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e Objetos - Atividade 01</title>
+</head>
+
+<body>
+    <p>Clique no botão para inserir os dados</p>
+    <input type="button" value="Inserir" onclick="inserirDados()">
+    <p id="result"></p>
+
+    <script>
+        function inserirDados() {
+            
+        var dadosPessoais = {};
+        dadosPessoais = {
+            nome: String(prompt('Digite seu nome: ')),
+            idade: parseInt(prompt('Digite sua idade'))
+        };
+
+            const resultado = document.querySelector('#result');
+
+            if(dadosPessoais.idade > 65) {
+                resultado.innerHTML = `Seu nome é: <strong>${dadosPessoais.nome}</strong> <br> Sua idade é: <strong>${dadosPessoais.idade}</strong> <br> Você <strong>possui</strong> o direito de aposentadoria!`;
+
+            } else {
+                resultado.innerHTML = `Seu nome é: <strong>${dadosPessoais.nome}</strong> <br> Sua idade é: <strong>${dadosPessoais.idade}</strong> <br> Você <strong>não possui</strong> o direito de aposentadoria!`;
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos de assinatura - EnglishNow</title>
+    <link rel="shortcut icon" href="imagens/logo-site.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/cabecalho.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/cursos.css">
+    <link rel="stylesheet" href="estilos/plano-ass.css">
+    <link rel="stylesheet" href="estilos/rodape.css">
+</head>
+
+<body>
+    <!--Cabeçalho do formulário de contato-->
+    <header class="cabecalho">
+        <img src="imagens/logo-empresa.png" alt="Logo EnglishNow" class="cabecalho-logo">
+        <nav class="cabecalho-nav">
+            <ul>
+                <li class="cabecalho-link"><a href="index.html">Home</a></li>
+                <li class="cabecalho-link"><a href="cursos.html">Cursos</a></li>
+                <li class="cabecalho-link"><a href="formulario-cont.html">Planos de assinatura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Conteúdo do formulário de assinatura-->
+    <section class="planos-assinatura2">
+        <h2>Planos de assinatura</h2>
+
+        <!--Cursos-->
+    <section class="conteudo-cursos2">
+        <div class="paragrafo-princ">
+        </div>
+        <table>
+            <thead>
+                <th class="cursos">Básico</th>
+                <th class="cursos">Intermediário</th>
+                <th class="cursos">Avançado</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="5" id="basico">
+                        <p class="p">Aulas online (salvas na nuvem)</p> <br> 
+                        <p>Atividades de fixação</p> <br> 
+                        <p>2 meses de aulas</p> <br> 
+                        <p>Certificado (Básico)</p> <br> 
+                        <p id="valor">R$ 35,00</p>
+                    </th>
+
+                    <th rowspan="5" id="intermediario">
+                        <p class="p">Aulas online (salvas na nuvem)</p> <br>
+                        <p>Professores disponíveis para tirar dúvidas</p> <br>
+                        <p>Atividades de fixação</p> <br>
+                        <p>6 meses de aulas</p> <br>
+                        <p>Certificado (Intermediário)</p> <br>
+                        <p id="valor">R$ 58,90</p>
+                    </th>
+
+                    <th rowspan="5" id="avancado">
+                        <p class="p">Aulas online (salvas na nuvem)</p> <br>
+                        <p>Professores e pessoas da comunidade disponíveis para tirar dúvidas e interagir por vídeos chamadas</p> <br>
+                        <p>Atividades e provas</p> <br>
+                        <p>1 ano de aula</p> <br>
+                        <p>Certificado (Avançado)</p> <br>
+                        <p id="valor">R$ 79,99</p>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+        <!--Conteúdo do formulário de assinatura part.2-->
+        <p class="paragrafo-princ2">Preencha os campos para que possa ser validado seu plano de assinatura na plataforma EnglishNow</p>
+
+        <form>
+            <label for="txtnome">Nome Completo: <input type="text" name="nome" id="txtnome" required></label> <br> <br>
+            <label for="txtemail">E-mail: <input type="email" name="email" id="txtemail" required ></label> <br> <br>
+    
+            <label for="select-idade">Idade: </label>
+            <select name="idade" id="select-idade">
+                <option value="valor1">20</option>
+                <option value="valor2">19</option>
+                <option value="valor3" selected>18</option>
+                <option value="valor4">17</option>
+                <option value="valor5">16</option>
+                <option value="valor6">15</option>
+            </select> <br> <br>
+    
+            <p>Sexo:</p>
+            <label for="rd-masc">M<input type="radio" name="sexo" id="rd-masc" required></label>
+            <label for="rd-fem">F<input type="radio" name="sexo" id="rd-fem" required></label> <br> <br>
+    
+            <div class="op-cursos">
+                <p>Curso:</p>
+                <label for="curso-basico">Básico</label>
+                <input type="checkbox" name="cursos" id="curso-basico">
+
+                <label for="curso-intermediario">Intermediário</label>
+                <input type="checkbox" name="cursos" id="curso-intermediario">
+
+                <label for="curso-avancado">Avançado</label>
+                <input type="checkbox" name="cursos" id="curso-avancado">
+
+            </div> <br> <br>
+    
+            <label for="msg">Conte para gente sua expectativa com o curso escolhido: <br><br><textarea name="mensagem" id="msg" cols="60" rows="5" required>Digite aqui sua mensagem...</textarea></label> <br> <br>
+    
+            <input type="submit" value="Enviar" id="bttn">
+            <input type="reset" value="Limpar" id="bttn">
+        </form>
+    </section>
+
+    <!--Rodapé do formulário de contato-->
+    <footer class="rodape">
+        <p>Site criado por David Luca</p>
+        <p>E-mail de contato: davidlluca085@gmail.com</p>
+    </footer>
+</body>
+
+</html>

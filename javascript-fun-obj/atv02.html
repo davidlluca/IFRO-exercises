@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e Objetos - Atividade 02</title>
+</head>
+
+<body>
+
+    <p id="result"></p>
+
+    <script>
+        function calcularImposto(){
+            var pessoa = {};
+            pessoa = {
+                nome: String(prompt('Digite seu nome: ')),
+                quant_filhos: parseInt(prompt('Quantidade de filhos: ')),
+                salario: parseFloat(prompt('Seu salário: '))
+                // imposto: function() {
+
+                //     if(pessoa.salario > 2500 && pessoa.salario < 5000 && pessoa.quant_filhos == 0) {
+                //         pessoa.imposto = parseInt(pessoa.salario) * 0.20;
+
+                //     } else if(pessoa.salario > 2500 && pessoa.salario < 5000 && pessoa.quant_filhos == 1) {
+                //         pessoa.imposto = parseInt(pessoa.salario) * 0.15;
+
+                //     } else if(pessoa.salario > 2500 && pessoa.salario < 5000 && pessoa.quant_filhos >= 2) {
+                //         pessoa.imposto = parseInt(pessoa.salario) * 0.10;
+                //     }
+                // }
+            }
+
+            //Salários até 2500
+            if(pessoa.salario < 2500) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `Nome: ${pessoa.nome} <br> Salário: R$${pessoa.salario},00`
+            } 
+
+             //Salários entre 2500 - 5000
+             else if(pessoa.salario > 2500 && pessoa.salario < 5000 && pessoa.quant_filhos == 0) {
+                const resultado = document.querySelector('#result');
+                const imposto = pessoa.salario * 0.20;
+                const novoSalario = pessoa.salario - imposto;
+                resultado.innerHTML = `Nome: ${pessoa.nome} <br> Desconto de imposto: R$${parseFloat(imposto)},00 <br> Salário Líquido: R$${parseFloat(novoSalario)},00`;
+
+
+            } else if(pessoa.salario > 2500 && pessoa.salario < 5000 && pessoa.quant_filhos == 1) {
+                const resultado = document.querySelector('#result');
+                const imposto = pessoa.salario * 0.15;
+                const novoSalario = pessoa.salario - imposto;
+                resultado.innerHTML = `Nome: ${pessoa.nome} <br> Desconto de imposto: R$${parseFloat(imposto)},00 <br> Salário Líquido: R$${parseFloat(novoSalario)},00`;
+
+
+            } else if(pessoa.salario > 2500 && pessoa.salario < 5000 && pessoa.quant_filhos >= 2) {
+                const resultado = document.querySelector('#result');
+                const imposto = pessoa.salario * 0.10;
+                const novoSalario = pessoa.salario - imposto;
+                resultado.innerHTML = `Nome: ${pessoa.nome} <br> Desconto de imposto: R$${parseFloat(imposto)},00 <br> Salário Líquido: R$${parseFloat(novoSalario)},00`;
+            }
+
+            //Salários até 5000
+            else if(pessoa.salario > 5000 && pessoa.quant_filhos == 0) {
+                const resultado = document.querySelector('#result');
+                const imposto = pessoa.salario * 0.30;
+                const novoSalario = pessoa.salario - imposto
+                resultado.innerHTML = `Nome: ${pessoa.nome} <br> Desconto de imposto: R$${parseFloat(imposto)},00 <br> Salário Líquido: R$${parseFloat(novoSalario)},00`;
+
+
+            } else if(pessoa.salario > 5000 && pessoa.quant_filhos == 1) {
+                const resultado = document.querySelector('#result');
+                const imposto = pessoa.salario * 0.28;
+                const novoSalario = pessoa.salario - imposto
+                resultado.innerHTML = `Nome: ${pessoa.nome} <br> Desconto de imposto: R$${parseFloat(imposto)},00 <br> Salário Líquido: R$${parseFloat(novoSalario)},00`;
+
+
+            } else if(pessoa.salario > 5000 && pessoa.quant_filhos >= 2) {
+                const resultado = document.querySelector('#result');
+                const imposto = pessoa.salario * 0.22;
+                const novoSalario = pessoa.salario - imposto
+                resultado.innerHTML = `Nome: ${pessoa.nome} <br> Desconto de imposto: R$${parseFloat(imposto)},00 <br> Salário Líquido: R$${parseFloat(novoSalario)},00`;
+            }
+        };
+
+        calcularImposto();
+
+    </script>
+</body>
+</html>

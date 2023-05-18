@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Classes</title>
+</head>
+
+<body>
+    
+    <script>
+        class Carro {
+            constructor() {
+                this.nome;
+                this.marca;
+                this.ano;
+                this.vistoriado = false;
+            }
+        }
+
+        function escolher(){
+            let opcao;
+
+            while(opcao != 1 && opcao != 2 && opcao != 3) {
+                opcao = prompt('Escolha uma opção: \n(1)-Inserir carro \n(2)-Imprimir carros \n(3)-Sair')
+            }
+            return opcao;
+        }
+
+        let opcao;
+        const classeCarros = [];
+
+        while(opcao != '3') {
+            opcao = escolher();
+
+            switch(opcao) {
+                case '1':
+                    const carros = new Carro();
+                    carros.nome = prompt('Digite um nome para o carro:');
+                    carros.marca = prompt('Digite a marca do carro:')
+                    carros.ano = parseInt(prompt('Digite o ano do carro:'));
+                break;
+
+                case '2':
+                    for(i = 0; i = carros.length; i++) {
+                        console.log(classeCarros[i]);
+                    };
+                break;
+
+                case '3':
+                    confirm('Você deseja realmente sair?');
+                break;
+            }
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.planos-assinatura {
+    height: 100vh;
+    text-align: center;
+}
+
+.planos-assinatura2 {
+    height: 140vh;
+    text-align: center;
+}
+
+.planos-assinatura h2 {
+    font-size: 25px;
+    font-family: var(--font-princ);
+    color: var(--cor-02);
+    font-weight: bold;
+    padding: 50px 0px 20px 0px;
+}
+
+.planos-assinatura2 h2 {
+    font-size: 25px;
+    font-family: var(--font-princ);
+    color: var(--cor-02);
+    font-weight: bold;
+    padding: 30px 0px 10px 0px;
+}
+
+.paragrafo-princ2 {
+    font-size: 19px;
+    padding: 30px;
+}
+
+#bttn {
+    background-color: var(--cor-02);
+    color: var(--cor-04);
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px 10px;
+    width: 150px;
+    font-family: var(--font-princ);
+}
+
+#bttn:hover {
+    background: var(--cor-04);
+    border: 1px solid var(--cor-02);
+    color: var(--cor-02);
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: var(--font-princ);
+}
+#bttn:active {
+    background-color: var(--cor-02);
+    color: var(--cor-04);
+    font-family: var(--font-princ);
+    cursor: pointer;
+}

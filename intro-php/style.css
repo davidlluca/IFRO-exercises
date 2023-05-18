@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --white: #F2F2F2;
+    --darkgray: #40403F;
+    --blue: #117BC2;
+    --fontPoppins: 'Poppins', sans-serif;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.divForm {
+    border: 2px solid var(--darkgray);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 50vw;
+}
+#tittle {
+    font-family: var(--fontPoppins);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: var(--darkgray);
+}
+#formulario {
+    padding: 50px;
+    text-align: center;
+}
+#name-p {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--darkgray);
+    font-family: var(--fontPoppins);
+}
+#username, #userlast, #userphone, #useremail, #userpassword {
+    border-radius: 20px;
+    border: 1px solid gray;
+    width: 200px;
+    height: 18px;
+    font-family: var(--fontPoppins);
+    color: var(--blue);
+    padding: 4px 4px 4px 15px;
+}
+#bttn {
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: var(--fontPoppins);
+}
+#bttn:hover {
+    transition: .5s;
+    background-color: white;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}

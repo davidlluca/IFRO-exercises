@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root {
+    --font-princ: 'Quicksand', sans-serif;
+    --cor-01: #DBCBB2;
+    --cor-02: #4D4445;
+    --cor-03: red;
+    --cor-04: #6C472D;
+    --cor-05: #909785;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--cor-05);
+}
+p {
+    color: var(--cor-02);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+    padding: 5px 0px 10px 50px;
+    background-color: var(--cor-02);
+    border-radius: 5px;
+}
+.menu-link {
+    text-decoration: none;
+    color: var(--cor-01);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-princ);
+}
+
+.conteudo {
+    background-color: var(--cor-02);
+    font-family: var(--font-princ);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+    padding-top: 5px;
+    height: 510px;
+}
+.conteudo-divs {
+    background-color: yellow;
+    margin: 0px 30px 10px 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+}
+.p-div, .s-div, .t-div {
+    background-color: white;
+    margin: 0px 20px 0px 10px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 5px solid var(--cor-01);
+}
+.p-div__titulo {
+    text-align: left;
+    padding: 5px 0px 20px 60px;
+    text-shadow: 1px 3px 10px #909785a2;
+    color: var(--cor-02);
+}
+.t-div strong {
+    color: var(--cor-03);
+}
+
+.rodape {
+    background-color: var(--cor-01);
+    margin: 30px 4px 0px 4px;
+}
+
+.rodape > p {
+    font-family: var(--font-princ);
+    color: var(--cor-02);
+    background-color: white;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 5px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name</label> <br>
+        <input type="text" name="txtname" id="name"> <br> <br>
+
+        <label for="date">Birth Day</label> <br>
+        <input type="date" name="input-date" id="date"> <br> <br>
+
+        <input type="checkbox" name="check-html" id="html">
+        <label for="html" id="lb-html"></label>
+
+        <input type="checkbox" name="check-css" id="css">
+        <label for="css" id="lb-css"></label>
+
+        <input type="checkbox" name="check-js" id="js">
+        <label for="js" id="lb-js"></label> <br> <br>
+
+        <label for="area">Message</label> <br>
+        <textarea name="txtarea" id="area" cols="30" rows="10"></textarea> <br> <br>
+
+        <input type="button" value="" id="bttn">
+    </form>
+
+    <script>
+        const name = document.querySelector('#name').value = 'David Luca';
+
+        const date = document.querySelector('#date').value = '2002-06-01';
+
+        const labelHtml = document.querySelector('#lb-html').innerHTML = 'Html';
+        const labelCss = document.querySelector('#lb-css').innerHTML = 'Css';
+        const labelJs = document.querySelector('#lb-js').innerHTML = 'JavaScript';
+        
+        const msg = document.querySelector('#area').innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ullam saepe voluptatum delectus animi ea? Optio neque.";
+
+        const button = document.querySelector('#bttn').value = 'Send';
+    </script>
+</body>
+</html>

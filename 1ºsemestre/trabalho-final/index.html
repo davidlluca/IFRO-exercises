@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial - EnglishNow</title>
+    <link rel="shortcut icon" href="imagens/logo-site.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/cabecalho.css">
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="estilos/cursos.css">
+    <link rel="stylesheet" href="estilos/plano-ass.css">
+    <link rel="stylesheet" href="estilos/rodape.css">
+</head>
+
+<body>
+    <!--Cabeçalho da página inicial-->
+    <header class="cabecalho">
+        <img src="imagens/logo-empresa.png" alt="Logo EnglishNow" class="cabecalho-logo">
+        <nav class="cabecalho-nav">
+            <ul>
+                <li class="cabecalho-link"><a href="index.html">Home</a></li>
+                <li class="cabecalho-link"><a href="cursos.html">Cursos</a></li>
+                <li class="cabecalho-link"><a href="formulario-cont.html">Planos de assinatura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Conteúdos da página inicial-->
+    <main>
+        <section class="conteudo-home">
+            <div>
+                <h1>Bem-vindo(a)</h1>
+                <p class="conteudo-p">Aqui você encontra os melhores cursos de inglês de sua preferência, totalmente online, indo do básico até o avançado.</p>
+                <p class="conteudo-p2">Confira nossos cursos e escolha a melhor opção para você aprender inglês hoje!</p>
+                <a href="cursos.html" class="conteudo-botao botao">Conheça os cursos</a>
+            </div>
+            <img src="imagens/img-home.png" alt="Pessoa garantindo o certiicado" class="conteudo-img" height="400px">
+        </section>
+        
+        <!--Cursos-->
+        <section class="conteudo-cursos">
+            <h2>Cursos</h2>
+            <div class="paragrafo-princ">
+                <p>Nosso objetivo principal é lhe proporcionar uma boa experiência no aprendizado do inglês. <br> Logo abaixo você tem três categorias, cada uma com uma dinâmica diferente. <br> Escolha por onde deseja começar!</p>
+            </div>
+            <table>
+                <thead>
+                    <th class="cursos">Básico</th>
+                    <th class="cursos">Intermediário</th>
+                    <th class="cursos">Avançado</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="5" id="basico">
+                            <p class="p">Aulas online (salvas na nuvem)</p> <br> 
+                            <p>Atividades de fixação</p> <br> 
+                            <p>2 meses de aulas</p> <br> 
+                            <p>Certificado (Básico)</p> <br> 
+                            <p id="valor">R$ 35,00</p>
+                        </th>
+
+                        <th rowspan="5" id="intermediario">
+                            <p class="p">Aulas online (salvas na nuvem)</p> <br>
+                            <p>Professores disponíveis para tirar dúvidas</p> <br>
+                            <p>Atividades de fixação</p> <br>
+                            <p>6 meses de aulas</p> <br>
+                            <p>Certificado (Intermediário)</p> <br>
+                            <p id="valor">R$ 58,90</p>
+                        </th>
+
+                        <th rowspan="5" id="avancado">
+                            <p class="p">Aulas online (salvas na nuvem)</p> <br>
+                            <p>Professores e pessoas da comunidade disponíveis para tirar dúvidas e interagir por vídeos chamadas</p> <br>
+                            <p>Atividades e provas</p> <br>
+                            <p>1 ano de aula</p> <br>
+                            <p>Certificado (Avançado)</p> <br>
+                            <p id="valor">R$ 79,99</p>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="formulario-cont.html" class="conteudo-botao botao">Assinar agora!</a>
+        </section>
+
+        <!--Formulário de assinatura-->
+        <section class="planos-assinatura">
+            <h2>Planos de assinatura</h2>
+            <p class="paragrafo-princ2">Preencha os campos para que possa ser validado seu plano de assinatura na plataforma EnglishNow</p>
+
+            <form>
+                <label for="txtnome">Nome Completo: <input type="text" name="nome" id="txtnome" required></label> <br> <br>
+                <label for="txtemail">E-mail: <input type="email" name="email" id="txtemail" required ></label> <br> <br>
+        
+                <label for="select-idade">Idade: </label>
+                <select name="idade" id="select-idade">
+                    <option value="valor1">20</option>
+                    <option value="valor2">19</option>
+                    <option value="valor3" selected>18</option>
+                    <option value="valor4">17</option>
+                    <option value="valor5">16</option>
+                    <option value="valor6">15</option>
+                </select> <br> <br>
+        
+                <p>Sexo:</p>
+                <label for="rd-masc">M<input type="radio" name="sexo" id="rd-masc" required></label>
+                <label for="rd-fem">F<input type="radio" name="sexo" id="rd-fem" required></label> <br> <br>
+        
+                <div class="op-cursos">
+                    <p>Curso:</p>
+                    <label for="curso-basico">Básico</label>
+                    <input type="checkbox" name="cursos" id="curso-basico">
+
+                    <label for="curso-intermediario">Intermediário</label>
+                    <input type="checkbox" name="cursos" id="curso-intermediario">
+
+                    <label for="curso-avancado">Avançado</label>
+                    <input type="checkbox" name="cursos" id="curso-avancado">
+
+                </div> <br> <br>
+        
+                <label for="msg">Conte para gente sua expectativa com o curso escolhido: <br><br><textarea name="mensagem" id="msg" cols="60" rows="5" required>Digite aqui sua mensagem...</textarea></label> <br> <br>
+        
+                <input type="submit" value="Enviar" id="bttn">
+                <input type="reset" value="Limpar" id="bttn">
+            </form>
+        </section>
+    </main>
+
+    <!--Rodapé da página inicial-->
+    <footer class="rodape">
+        <p>Site criado por David Luca</p>
+        <p>E-mail de contato: davidlluca085@gmail.com</p>
+    </footer>
+</body>
+
+</html>

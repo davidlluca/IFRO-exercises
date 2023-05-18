@@ -1,0 +1,58 @@
+.conteudo-cursos {
+    height: 90vh;
+    text-align: center;
+}
+.conteudo-cursos2 {
+    height: 50vh;
+    text-align: center;
+}
+.conteudo-cursos h2 {
+    font-size: 25px;
+    font-family: var(--font-princ);
+    color: var(--cor-02);
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.paragrafo-princ {
+    font-size: 19px;
+    padding: 20px;
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+    line-height: normal;
+}
+
+table {
+    width: 800px;
+    height: 300px;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+thead {
+    background: var(--cor-02);
+    color: var(--cor-04);
+    font-family: var(--font-princ);
+}
+
+.cursos {
+    padding: 5px;
+}
+
+th {
+    border: 1px solid black;
+}
+
+.p {
+    padding-top: 20px;
+}
+
+#valor {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#basico, #intermediario, #avancado {
+    width: 400px;
+}

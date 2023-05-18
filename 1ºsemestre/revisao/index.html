@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de revisão</title>
+</head>
+
+<body>
+    
+    <p id="result"></p>
+
+    <script>
+        function calcularImc() {
+            const nome = String(prompt('Digite seu nome: '));
+            const altura = parseFloat(prompt('Digite sua altura em (cm): '));
+            const peso = parseFloat(prompt('Digite seu peso (kg): '));
+
+            const newAltura = altura / 100;
+            const imc = peso / (altura * altura);
+
+            if(imc < 16) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Baixo peso muito grave!</strong>`;
+
+            } else if(imc >= 16 && imc <= 16.99) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Baixo peso grave!</strong>`;
+
+            } else if(imc >= 17 && imc <= 18.49) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Baixo peso!</strong>`;
+
+            } else if(imc >= 18.50 && imc <= 24.99) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Peso normal!</strong>`;
+
+            } else if(imc >= 25 && imc <= 29.99) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Sobrepeso!</strong>`;
+
+            } else if(imc >= 30 && imc <= 34.99) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Obesidade grau I!</strong>`;
+
+            } else if(imc >= 35 && imc <= 39.99) {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Obesidade grau II!</strong>`;
+
+            } else {
+                const resultado = document.querySelector('#result');
+                resultado.innerHTML = `<strong>${nome}</strong> possui índice de massa corporal igual a <strong>${imc.toFixed(2)}</strong>, sendo classificado como: <strong>Obesidade grau III!</strong>`;
+
+            }
+        }
+
+        calcularImc();
+    </script>
+</body>
+</html>

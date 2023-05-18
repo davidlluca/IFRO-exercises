@@ -1,0 +1,13 @@
+.rodape {
+    background-color: var(--cor-princ);
+    color: var(--cor-04);
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.rodape p {
+    line-height: normal;
+    font-family: var(--font-princ);
+    font-size: 18px;
+}

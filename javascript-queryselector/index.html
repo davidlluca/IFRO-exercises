@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - QuerySelector</title>
+</head>
+
+<body>
+    <div id="clothes-content">
+        <h1 id="clothes-tittle">Tittle 01</h1>
+        <p id="content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <ul class="info-content">
+            <li class="info">T-shirt</li>
+            <li class="info">Hat</li>
+            <li class="info">Pants</li>
+            <li class="info">Coat</li>
+            <li class="info">Shoes</li>
+        </ul>
+    </div>
+
+    <div id="brand-content">
+        <h1 id="brand-tittle">Tittle 02</h1>
+        <p id="content-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p id="content-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+
+    <script>
+        function changeColor() {
+          const dices = document.querySelector('.info');
+            var dicesAll = Array.from(document.querySelectorAll('.info'));
+
+            for(i=0; i<dicesAll.length; i++) {
+                const elemento = dicesAll[i];
+                elemento.style.color = 'lightgray';
+            };
+
+            const tittle = document.querySelector('#brand-tittle');
+            tittle.style.color = 'purple';
+        };
+        
+        changeColor();
+        
+    </script>
+</body>
+</html>

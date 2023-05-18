@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <p id="result2"></p>
+    
+    <script>
+        const numeros = []
+
+        for(i = 0; i < 10; i++){
+            numeros[i] = parseInt(prompt('Digite um número: '));
+        };
+
+        function imprimirValores() {
+            const resultado = document.querySelector('#result');
+            const resultado2 = document.querySelector('#result2');
+
+            resultado.innerHTML = `Ordem escrita: <strong>${numeros}</strong>`;
+            resultado2.innerHTML = `Ordem crescente: <strong>${numeros.sort()}</strong>`;
+        };
+        
+        imprimirValores();
+    </script>
+</body>
+</html>

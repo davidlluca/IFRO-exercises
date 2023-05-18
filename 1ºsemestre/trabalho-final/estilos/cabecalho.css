@@ -1,0 +1,29 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 20px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+.cabecalho-logo {
+    width: 200px;
+}
+
+.cabecalho-link {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-right: .7rem;
+    margin-left: .7rem;
+    font-family: var(--font-princ);
+    color: var(--cor-princ);
+    font-weight: bold;
+}
+.cabecalho-link a:hover {
+    background: var(--cor-princ);
+    color: white;
+    padding: 5px;
+    transition: 0.4s;
+    border-radius: 10px;
+}

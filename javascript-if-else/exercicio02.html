@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If/Else - Exercício 02</title>
+</head>
+
+<body>
+    
+    <script>
+        const turno = String(prompt('Em qual turno você estuda? \nDigite (m)-Matutino | (v)-Vespertino | (n)-Noturno'));
+
+        switch (turno) {
+            case 'm':
+                alert('Bom dia!');
+            break;
+
+            case 'v':
+                alert('Boa tarde!');
+            break;
+
+            case 'n':
+                alert('Boa noite!');
+            break;
+
+            default:
+                alert('Valor inválido!');
+            break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+
+    <p id="result"></p>
+ 
+    <script>
+        const nomes = [];
+
+        for(i = 0; i < 20; i++) {
+            nomes[i] = String(prompt('Digite um nome de um carro: '));
+        };
+
+        function imprimirNomes() {
+            const resultado = document.querySelector('#result');
+            resultado.innerHTML = `Nomes: <strong>${nomes}</strong>`
+        };
+
+        imprimirNomes();
+    </script>
+</body>
+</html>

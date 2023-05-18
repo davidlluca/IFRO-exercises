@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Events</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <section class="container">
+    
+        <div class="onclickSoma">
+            <h1 id="addTittle">Onclick</h1>
+            <label for="">Number 1</label>
+            <input type="number" name="number" id="number"> <br> <br>
+            
+            <label for="">Number 2</label>
+            <input type="number" name="number2" id="number2"> <br> <br>
+            
+            <p id="result"></p> <br>
+            
+            <input type="button" value="Add" onclick="add()">
+        </div>
+        
+        <div class="onfocus" onfocus="enter()">
+            <h1 id="onfocusTittle">Onfocus & Onblur</h1>
+            <label for="">Username</label>
+            <input type="text" name="input-focus" id="input-focus" onfocus="enter()" onblur="exit()"> <br> <br>
+            
+            <h2>Onchange</h2> <br>
+            <label for="message">Email</label>
+            <input type="text" name="email" id="email" onchange="change()">
+        </div>
+    </section>
+</body>
+</html>

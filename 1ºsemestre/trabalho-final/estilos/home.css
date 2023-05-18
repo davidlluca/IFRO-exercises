@@ -1,0 +1,36 @@
+.conteudo-home {
+    padding: 40px 0px 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 83vh;
+}
+
+.conteudo-home h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: var(--font-princ);
+    color: var(--cor-02);
+    font-weight: bold;
+}
+
+.conteudo-p {
+    font-size: 19px;
+    width: 500px;
+    padding-bottom: 50px;
+    line-height: normal;
+}
+.conteudo-p2 {
+    font-size: 17px;
+    text-align: center;
+    width: 500px;
+    line-height: normal;
+}
+
+.conteudo-botao {
+    margin: auto;
+    margin-top: 25px;
+    font-weight: bold;
+    font-family: var(--font-princ);
+    font-size: 17px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If/Else - Exercício 01</title>
+</head>
+
+<body>
+    
+    <script>
+        const limite = prompt('Digite o valor do seu limite:');
+        let prod1 = Number.parseInt(prompt('Digite o valor do primeiro produto:'));
+        let prod2 = Number.parseInt(prompt('Digite o valor do segundo produto:'));
+        let prod3 = Number.parseInt(prompt('Digite o valor do terceiro produto:'));
+        let prod4 = Number.parseInt(prompt('Digite o valor do quarto produto:'));
+        const valorTotal = prod1 + prod2 + prod3 + prod4;
+
+        if(valorTotal > limite) {
+            confirm('O valor total ultrapassou seu limite!');
+        } else {
+            confirm('O valor não ultrapassou seu limite!');
+        }
+    </script>
+</body>
+</html>
